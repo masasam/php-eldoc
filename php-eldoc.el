@@ -2227,11 +2227,11 @@
              php-eldoc-functions-hash)
     result))
 
-(eval-after-load 'auto-complete
-  '(ac-define-source php-eldoc
-    '((candidates . php-eldoc-ac-candidates)
-      (cache)
-      (symbol . "f"))))
+;; (eval-after-load 'auto-complete
+;;   '(ac-define-source php-eldoc
+;;      '((candidates . php-eldoc-ac-candidates)
+;;        (cache)
+;;        (symbol . "f"))))
 
 ;;;###autoload
 (defun php-eldoc-enable ()
