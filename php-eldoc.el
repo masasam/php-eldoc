@@ -2236,7 +2236,7 @@
 ;;;###autoload
 (defun php-eldoc-enable ()
   (interactive)
-  (pushnew 'ac-source-php-eldoc ac-sources))
+  (pushnew 'ac-source-php-eldoc ac-sources)
   (setq-local eldoc-documentation-function 'php-eldoc-function)
   (eldoc-mode 1))
 
